@@ -1,14 +1,14 @@
 ```@meta
-CurrentModule = RobustChebPade
+CurrentModule = ChebPade
 ```
 
 # RobustChebPade
 
-Documentation for [RobustChebPade](https://github.com/mjp98/RobustChebPade.jl).
+Documentation for [ChebPade](https://github.com/mjp98/RobustChebPade.jl).
 
 ```@index
 ```
 
 ```@autodocs
-Modules = [RobustChebPade]
+Modules = [ChebPade]
 ```
