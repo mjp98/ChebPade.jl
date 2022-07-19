@@ -1,3 +1,5 @@
+# Based on https://github.com/chebfun/chebfun/blob/master/%40chebfun/chebpade.m
+
 """
     clenshawlord(F::Fun{<:Chebyshev}, m::Integer, n::Integer)
 
