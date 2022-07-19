@@ -12,9 +12,9 @@ export chebpade
 computes the (m,n) Chebyshev-Pade approximation to f using method :clenshawlord or :maehly
 """
 function chebpade(f::Fun{<:Chebyshev}, m::Integer, n::Integer; method=:clenshawlord)
+    @assert method in [:clenshawlord,:maehly] "$method not implemented.\n Set method = :clenshawlord or :maehly"
     method == :clenshawlord && return clenshawlord(f, m, n)
     method == :maehly && return maehly(f, m, n)
-    @error "$method not implemented. Set method = :clenshawlord or :maehly"
 end
 
 include("util.jl")

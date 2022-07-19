@@ -44,6 +44,10 @@ chebpaderat(args...;kwargs...) = RationalFun(chebpade(args...;kwargs...)...)
         @test P20_1.(x) ≈ Fx atol = tol
     end
 
+    @testset "algorithm specification error" begin
+        @test_throws AssertionError chebpade(Fun(zero,-1..1), 4, 4;method=:rand);
+    end
+
     @testset "adapted from Chebfun" begin
         #% An example which doesn't require degree-reduction.
         dom = -1..3;
