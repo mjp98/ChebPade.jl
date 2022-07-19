@@ -4,7 +4,7 @@ using Documenter
 DocMeta.setdocmeta!(ChebPade, :DocTestSetup, :(using ChebPade); recursive=true)
 
 makedocs(;
-    modules=[RobustChebPade],
+    modules=[ChebPade],
     authors="Matthew Priddin and contributors",
     repo="https://github.com/mjp98/ChebPade.jl/blob/{commit}{path}#{line}",
     sitename="ChebPade.jl",
