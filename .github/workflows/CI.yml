@@ -54,6 +54,6 @@ jobs:
       - run: |
           julia --project=docs -e '
             using Documenter: DocMeta, doctest
-            using RobustChebPade
-            DocMeta.setdocmeta!(RobustChebPade, :DocTestSetup, :(using RobustChebPade); recursive=true)
-            doctest(RobustChebPade)'
+            using ChebPade
+            DocMeta.setdocmeta!(ChebPade, :DocTestSetup, :(using ChebPade); recursive=true)
+            doctest(ChebPade)'
