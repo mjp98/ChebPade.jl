@@ -2,7 +2,7 @@
 CurrentModule = ChebPade
 ```
 
-# RobustChebPade
+# ChebPade
 
 Documentation for [ChebPade](https://github.com/mjp98/RobustChebPade.jl).
 
