@@ -48,6 +48,17 @@ chebpaderat(args...;kwargs...) = RationalFun(chebpade(args...;kwargs...)...)
         @test_throws AssertionError chebpade(Fun(zero,-1..1), 4, 4;method=:rand);
     end
 
+
+    @testset "maehly singular" begin
+        # example where degree reduction in denominator is required
+        dom = -1..1
+        P = Fun(dom,[1]);
+        Q = Fun(dom,[2]);
+        R = P./Q
+        p,q = chebpade(R,1,5;method=:maehly)
+        @test norm(R - p./q) < 100eps()
+    end
+
     @testset "adapted from Chebfun" begin
         #% An example which doesn't require degree-reduction.
         dom = -1..3;
@@ -57,6 +68,7 @@ chebpaderat(args...;kwargs...) = RationalFun(chebpade(args...;kwargs...)...)
         R = P./Q
         p,q = chebpade(R, 4, 4;method=:maehly);
         @test norm(P - p) + norm(Q - q) < 100*eps();
+
         #An example which requires degree-reduction.
         p,q = chebpade(R, 6, 5; method = :maehly);
         @test norm(P - p) + norm(Q - q) < 100*eps();
