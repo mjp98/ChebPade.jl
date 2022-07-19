@@ -78,7 +78,7 @@ uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 deps = ["SHA", "Serialization"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 
-[[deps.RobustChebPade]]
+[[deps.ChebPade]]
 path = ".."
 uuid = "53bbac3b-c3e6-471a-a638-3af284dd6537"
 version = "0.1.0"
