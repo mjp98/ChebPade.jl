@@ -1,0 +1,20 @@
+name = "ChebPade"
+uuid = "53bbac3b-c3e6-471a-a638-3af284dd6537"
+authors = ["Matthew Priddin and contributors"]
+version = "0.1.0"
+
+[deps]
+ApproxFun = "28f2ccd6-bb30-5033-b560-165f7b14dc2f"
+DSP = "717857b8-e6f2-59f4-9121-6e50c889abd2"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+PaddedViews = "5432bcbf-9aad-5242-b902-cca2824c8663"
+ToeplitzMatrices = "c751599d-da0a-543b-9d20-d0a503d91d24"
+
+[compat]
+julia = "1.7"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
