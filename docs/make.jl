@@ -1,16 +1,16 @@
-using RobustChebPade
+using ChebPade
 using Documenter
 
-DocMeta.setdocmeta!(RobustChebPade, :DocTestSetup, :(using RobustChebPade); recursive=true)
+DocMeta.setdocmeta!(ChebPade, :DocTestSetup, :(using ChebPade); recursive=true)
 
 makedocs(;
     modules=[RobustChebPade],
     authors="Matthew Priddin and contributors",
-    repo="https://github.com/mjp98/RobustChebPade.jl/blob/{commit}{path}#{line}",
-    sitename="RobustChebPade.jl",
+    repo="https://github.com/mjp98/ChebPade.jl/blob/{commit}{path}#{line}",
+    sitename="ChebPade.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://mjp98.github.io/RobustChebPade.jl",
+        canonical="https://mjp98.github.io/ChebPade.jl",
         assets=String[],
     ),
     pages=[
@@ -19,6 +19,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/mjp98/RobustChebPade.jl",
+    repo="github.com/mjp98/ChebPade.jl",
     devbranch="main",
 )
