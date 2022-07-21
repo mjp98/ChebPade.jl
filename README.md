@@ -5,7 +5,7 @@
 [![Coverage](https://codecov.io/gh/mjp98/ChebPade.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/mjp98/ChebPade.jl)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-A Julia package to compute the Chebyshev-Pade approximation from a Chebyshev polynomial expansion. The methods are based on those implemented in [Chebfun](https://github.com/chebfun/chebfun) ([license](https://github.com/chebfun/chebfun/blob/master/LICENSE.txt)).
+A Julia package to compute the Chebyshev-Pade approximation from a Chebyshev polynomial expansion.
 
 ## Installation
 
