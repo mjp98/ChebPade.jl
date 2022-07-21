@@ -22,7 +22,7 @@ SOFTWARE.
 
 This package is derived from the following files of Chebfun v5:
 
-https://github.com/chebfun/chebfun/blob/master/%40chebfun/chebpade.m
+https://github.com/chebfun/chebfun/blob/master/@chebfun/chebpade.m
 https://github.com/chebfun/chebfun/blob/master/tests/chebfun/test_chebpade.m
 
 which is distributed with the following license:
