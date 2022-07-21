@@ -1,7 +1,7 @@
 module ChebPade
 
 using LinearAlgebra, ToeplitzMatrices, PaddedViews
-using ApproxFun
+using ApproxFunOrthogonalPolynomials
 using DSP
 
 export chebpade

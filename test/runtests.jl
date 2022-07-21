@@ -1,4 +1,4 @@
-using ChebPade, ApproxFun, LinearAlgebra
+using ChebPade, ApproxFunOrthogonalPolynomials, LinearAlgebra
 using Test
 
 # In part based on https://github.com/chebfun/chebfun/blob/master/tests/chebfun/test_chebpade.m

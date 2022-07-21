@@ -15,23 +15,11 @@ git-tree-sha1 = "af92965fb30777147966f58acb05da51c5616b5f"
 uuid = "79e6a3ab-5dfb-504d-930d-738a2a938a0e"
 version = "3.3.3"
 
-[[deps.ApproxFun]]
-deps = ["AbstractFFTs", "ApproxFunBase", "ApproxFunFourier", "ApproxFunOrthogonalPolynomials", "ApproxFunSingularities", "Calculus", "DomainSets", "DualNumbers", "FFTW", "FastTransforms", "LinearAlgebra", "RecipesBase", "Reexport", "SpecialFunctions"]
-git-tree-sha1 = "ae7a9e3f5ffa2c4a32aec83cb29f9483f8f60839"
-uuid = "28f2ccd6-bb30-5033-b560-165f7b14dc2f"
-version = "0.13.3"
-
 [[deps.ApproxFunBase]]
 deps = ["AbstractFFTs", "BandedMatrices", "BlockArrays", "BlockBandedMatrices", "Calculus", "DSP", "DomainSets", "DualNumbers", "FFTW", "FastGaussQuadrature", "FillArrays", "InfiniteArrays", "InfiniteLinearAlgebra", "IntervalSets", "LazyArrays", "LinearAlgebra", "LowRankApprox", "SparseArrays", "SpecialFunctions", "StaticArrays", "Statistics", "Test", "ToeplitzMatrices"]
-git-tree-sha1 = "86cffc9137149377b219f108399bb4d693463f47"
+git-tree-sha1 = "6c6827c9981b302f27073f7686ce32acb2742101"
 uuid = "fbd15aa5-315a-5a7d-a8a4-24992e37be05"
-version = "0.5.9"
-
-[[deps.ApproxFunFourier]]
-deps = ["AbstractFFTs", "ApproxFunBase", "DomainSets", "FFTW", "FastTransforms", "InfiniteArrays", "IntervalSets", "LinearAlgebra", "Reexport"]
-git-tree-sha1 = "966940716df8f4cf9978429b6da4e2b6034dcdbc"
-uuid = "59844689-9c9d-51bf-9583-5b794ec66d30"
-version = "0.2.13"
+version = "0.5.10"
 
 [[deps.ApproxFunOrthogonalPolynomials]]
 deps = ["AbstractFFTs", "ApproxFunBase", "BandedMatrices", "BlockArrays", "BlockBandedMatrices", "DomainSets", "FFTW", "FastGaussQuadrature", "FastTransforms", "FillArrays", "IntervalSets", "LinearAlgebra", "Reexport", "SpecialFunctions", "Statistics"]
@@ -39,26 +27,8 @@ git-tree-sha1 = "344f2b90f58f9199ef72992972086759efe9cd91"
 uuid = "b70543e2-c0d9-56b8-a290-0d4d6d4de211"
 version = "0.4.9"
 
-[[deps.ApproxFunSingularities]]
-deps = ["ApproxFunBase", "ApproxFunOrthogonalPolynomials", "DomainSets", "IntervalSets", "LinearAlgebra", "Reexport", "Statistics"]
-git-tree-sha1 = "306ae33d5caf36903f102a0d133d90f3cd3ccb84"
-uuid = "f8fcb915-6b99-5be2-b79a-d6dbef8e6e7e"
-version = "0.2.3"
-
 [[deps.ArgTools]]
 uuid = "0dad84c5-d112-42e6-8d28-ef12dabb789f"
-
-[[deps.ArrayInterface]]
-deps = ["ArrayInterfaceCore", "Compat", "IfElse", "LinearAlgebra", "Static"]
-git-tree-sha1 = "6ccb71b40b04ad69152f1f83d5925de13911417e"
-uuid = "4fba245c-0d91-5ea0-9b3e-6abc04ee57a9"
-version = "6.0.19"
-
-[[deps.ArrayInterfaceCore]]
-deps = ["LinearAlgebra", "SparseArrays", "SuiteSparse"]
-git-tree-sha1 = "7d255eb1d2e409335835dc8624c35d97453011eb"
-uuid = "30b0a656-2188-435a-8636-2ec0e6a096e2"
-version = "0.1.14"
 
 [[deps.ArrayLayouts]]
 deps = ["FillArrays", "LinearAlgebra", "SparseArrays"]
@@ -166,12 +136,6 @@ git-tree-sha1 = "5837a837389fccf076445fce071c8ddaea35a566"
 uuid = "fa6b7ba4-c1ee-5f82-b5fc-ecf0adba8f74"
 version = "0.6.8"
 
-[[deps.EllipsisNotation]]
-deps = ["ArrayInterface"]
-git-tree-sha1 = "03b753748fd193a7f2730c02d880da27c5a24508"
-uuid = "da5c29d0-fa7d-589e-88eb-ea29b0a81949"
-version = "1.6.0"
-
 [[deps.FFTW]]
 deps = ["AbstractFFTs", "FFTW_jll", "LinearAlgebra", "MKL_jll", "Preferences", "Reexport"]
 git-tree-sha1 = "90630efff0894f8142308e334473eba54c433549"
@@ -215,11 +179,6 @@ version = "0.13.2"
 deps = ["Artifacts", "Libdl"]
 uuid = "781609d7-10c4-51f6-84f2-b8444358ff6d"
 
-[[deps.IfElse]]
-git-tree-sha1 = "debdd00ffef04665ccbb3e150747a77560e8fad1"
-uuid = "615f187c-cbe4-4ef1-ba3b-2fcf58d6d173"
-version = "0.1.1"
-
 [[deps.InfiniteArrays]]
 deps = ["ArrayLayouts", "FillArrays", "Infinities", "LazyArrays", "LinearAlgebra", "Statistics"]
 git-tree-sha1 = "e84e4ea66ca02755eaf7063e07169bf22370ee2c"
@@ -248,10 +207,10 @@ deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 
 [[deps.IntervalSets]]
-deps = ["Dates", "EllipsisNotation", "Statistics"]
-git-tree-sha1 = "bcf640979ee55b652f3b01650444eb7bbe3ea837"
+deps = ["Dates", "Statistics"]
+git-tree-sha1 = "ad841eddfb05f6d9be0bff1fa48dcae32f134a2d"
 uuid = "8197267c-284f-5f27-9208-e0e47529a953"
-version = "0.5.4"
+version = "0.6.2"
 
 [[deps.InverseFunctions]]
 deps = ["Test"]
@@ -494,12 +453,6 @@ git-tree-sha1 = "d75bda01f8c31ebb72df80a46c88b25d1c79c56d"
 uuid = "276daf66-3868-5448-9aa4-cd146d93841b"
 version = "2.1.7"
 
-[[deps.Static]]
-deps = ["IfElse"]
-git-tree-sha1 = "46638763d3a25ad7818a15d441e0c3446a10742d"
-uuid = "aedffcd0-7271-4cad-89d0-dc628f76c6d3"
-version = "0.7.5"
-
 [[deps.StaticArrays]]
 deps = ["LinearAlgebra", "Random", "StaticArraysCore", "Statistics"]
 git-tree-sha1 = "e972716025466461a3dc1588d9168334b71aafff"
@@ -526,10 +479,6 @@ deps = ["DataAPI", "DataStructures", "LinearAlgebra", "LogExpFunctions", "Missin
 git-tree-sha1 = "472d044a1c8df2b062b23f222573ad6837a615ba"
 uuid = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
 version = "0.33.19"
-
-[[deps.SuiteSparse]]
-deps = ["Libdl", "LinearAlgebra", "Serialization", "SparseArrays"]
-uuid = "4607b0f0-06f3-5cda-b6b1-a6196a1729e9"
 
 [[deps.TOML]]
 deps = ["Dates"]
