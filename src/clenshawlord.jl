@@ -34,7 +34,7 @@ computes the (m,n) Chebyshev-Pade approximant to F using the Clenshaw-Lord metho
 """
 function clenshawlord(F::Fun{<:Chebyshev}, m::Integer, n::Integer)
 
-    c = extendrandn(copy(coefficients(F)), m + 2n + 1)
+    c = padwithnoise(copy(coefficients(F)), m + 2n + 1)
 
     l = max(m, n)                   # Temporary degree variable in case m < n.
 
