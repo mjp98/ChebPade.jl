@@ -32,9 +32,16 @@
 
 computes the (m,n) Chebyshev-Pade approximant to F using the Clenshaw-Lord method
 """
-function clenshawlord(F::Fun{<:Chebyshev}, m::Integer, n::Integer)
+function clenshawlord(F::Fun{<:Chebyshev,T}, m::Integer, n::Integer) where T
+    pk,qk = clenshawlord(coefficients(F),m,n)
+    p = Fun(space(F), pk)
+    q = Fun(space(F), qk)
+    return p,q
+end
 
-    c = padwithnoise(copy(coefficients(F)), m + 2n + 1)
+function clenshawlord(F::Vector{T}, m::Integer, n::Integer) where T
+
+    c = padwithnoise(F, m + 2n + 1)
 
     l = max(m, n)                   # Temporary degree variable in case m < n.
 
@@ -47,7 +54,7 @@ function clenshawlord(F::Fun{<:Chebyshev}, m::Integer, n::Integer)
     rhs = c[(m+1:m+n).+1]           # RHS of Hankel system.
 
     # Use convolution to compute numerator Laurent-Pade coefficients.
-    β = n == 0 ? [1] : reverse([-H \ rhs; 1])
+    β = n == 0 ? [one(T)] : reverse([-H \ rhs; 1])
     c[1] /= 2
     α = conv(c[1:l+1], β)
     D = PaddedView(0, [a * b for a in α, b in β], (l + 1, l + 1))
@@ -63,8 +70,5 @@ function clenshawlord(F::Fun{<:Chebyshev}, m::Integer, n::Integer)
     pk ./= qk[1]
     qk .= (2 / qk[1]) * qk
     qk[1] /= 2
-
-    p = Fun(space(F), pk)
-    q = Fun(space(F), qk)
-    return p,q
+    return pk, qk
 end
