@@ -1,4 +1,4 @@
-const epsreal = eps ∘ float ∘ real
+epsreal(z) = eps(float(real(z)))
 
 """
     padwithnoise(x::AbstractVector{T},n::Integer)
