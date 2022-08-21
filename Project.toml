@@ -11,7 +11,7 @@ PaddedViews = "5432bcbf-9aad-5242-b902-cca2824c8663"
 ToeplitzMatrices = "c751599d-da0a-543b-9d20-d0a503d91d24"
 
 [compat]
-ApproxFunOrthogonalPolynomials = "0.4"
+ApproxFunOrthogonalPolynomials = "0.4, 0.5"
 DSP = "0.7"
 PaddedViews = "0.5"
 ToeplitzMatrices = "0.7"
